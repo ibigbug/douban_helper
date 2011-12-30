@@ -3,6 +3,7 @@
   "version": "1.0",
   "description": "豆瓣加心音乐下载器",
   "homepage_url": "http://blog.xiaoba.me",
+  "update_url": "http://doubanhelper.sinaapp.com/updates.xml",
   "content_scripts": [ {
       "js": [  "jquery.js", "index.js" ],
       "matches": [  "http://douban.fm/*" ]
