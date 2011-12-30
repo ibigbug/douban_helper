@@ -28,11 +28,11 @@ $(document).ready(function(){
                         });
                 });
             },
-            getSongName: (function(){ // use closure
+            getSongName: (function(){ 
                 //get the song name for download
                 $('.download-now').live('click',function(){
                     var song_name = $(this).parent().parent().find('.song_title').html();
-                    var pattern = /^[\u4E00-\u9FA5\uf900-\ufa2d\w\s]{0,30}$/; //use regular expression
+                    var pattern = /^[\u4E00-\u9FA5\uf900-\ufa2d\w\s]{0,30}$/; 
                     song_name = pattern.exec(song_name);
                     song_name = song_name ? song_name : prompt('矮油！没有找到这首歌诶~请手动输入歌曲名称~');
                     //call the getSongURL method 
